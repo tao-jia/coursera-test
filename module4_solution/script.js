@@ -57,11 +57,11 @@ for (var name in names) {
   // 'j'. If the same, call byeSpeaker's 'speak' method with the current name
   // in the loop. Otherwise, call helloSpeaker's 'speak' method with the current
   // name in the loop.
-  var first = (names[name][0]).toLowerCase();
+  var firstLetter = (names[name][0]).toLowerCase();
   //console.log(first);
-  if (first=='j') {
-    console.log("Good Bye " + names[name]);
+  if (firstLetter=='j') {
+    byeSpeaker.speak(names[name]);
   } else {
-    console.log("Hello " + names[name]);
+    helloSpeaker.speak(names[name]);
   }
 }
